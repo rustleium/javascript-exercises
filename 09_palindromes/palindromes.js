@@ -1,4 +1,8 @@
-const palindromes = function () {
+const palindromes = function (string) {
+  let strippedString = string.replace(/[!"#$%&'()*+, -./:;<=>?@[\]^_`{|}~]/g, '')
+  .toLowerCase();
+  let reversedString = strippedString.split('').reverse().join('');
+  return reversedString === strippedString;
 
 };
 
