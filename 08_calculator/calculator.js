@@ -20,8 +20,12 @@ const power = function(base, power) {
 	return base ** power;
 };
 
-const factorial = function() {
-	
+const factorial = function(num) {
+  let fact = 1;
+  for(let i = num; i > 0; i--) {
+    fact *= i;
+  }
+  return fact;	
 };
 
 // Do not edit below this line
